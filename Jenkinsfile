@@ -3,7 +3,7 @@ pipeline {
  
    environment {
         DOCKERHUB_CREDENTIALS = credentials('docker')
-        IMAGE_NAME = "umangkhandelwal/practicerprt:v1"
+        IMAGE_NAME = "umangkhandelwal/practicerprt:v2"
         K8_NAMESPACE = "employee-portal"
     }
 
@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/UmangKhandelwal23/AprilPRT'
+                url: 'https://github.com/UmangKhandelwal23/PractisePRT'
             }
         }
 
